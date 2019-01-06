@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="websocket.css">
+</head>
+
+<body>
+    <h2>多人在线聊天室</h2>
+    <div id="info">
+        服务器地址:
+        <input value="ws://localhost:9900" class="address" type="text" placeholder="请输入服务器地址">
+        <br>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 用户名:
+       <input value="帅帅的表哥" class="user_name" type="text" placeholder="请输入用户名">
+        <br>
+        <button class="open_serve">链接聊天室</button>
+        <span class="serve_connect_number">当前聊天室有1人链接</span>
+    </div>
+    <div id="serve_box">
+        <div class="user_info">
+            <span> 欢迎加入深圳同城交友聊天室,在这里你可以畅所欲言~</span>
+        </div>
+        <input class="message" type="text">
+    </div>
+    <script src="./websocket.js"></script>
+</body>
+
+</html>
